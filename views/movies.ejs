@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie List</h1>
+    <div class="movie-list">
+      <% movies.forEach(movie => { %>
+        <div class="movie-item">
+          <img src="<%= movie.Poster %>" alt="<%= movie.Title %>">
+          <h2><%= movie.Title %></h2>
+          <p><%= movie.Year %></p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</body>
+</html>
